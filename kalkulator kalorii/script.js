@@ -1,52 +1,41 @@
-// The BMR Section of the website Starts Here!
+let isCalculating = false;
+const button=document.querySelector('#button');
 
-var BMRgivenHeight = document.getElementById("BMRheight");
-var BMRmainWeight = document.getElementById("BMRweight");
-var BMRmainAge = document.getElementById("BMRage");
-
-function BMRheightValueFunc() {
-    if (BMRheightValue.value == "inch") {
-        BMRgivenHeight.setAttribute("placeholder", "Enter Your Height (in inch)");
-    } else if (BMRheightValue.value == "cm") {
-        BMRgivenHeight.setAttribute("placeholder", "Enter Your Height (in centimeter)");
-    } else if (BMRheightValue.value == "meter") {
-        BMRgivenHeight.setAttribute("placeholder", "Enter Your Height (in meter)");
+function calculateBMR(weight, height, age, gender) {
+    if (gender === 'male') {
+      return 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+    } else if (gender === 'female') {
+      return 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
     }
+  }
+
+  function calculateCaloricIntake(activityLevel, BMR) {
+    if (activityLevel === 'sedentary') {
+      return BMR * 1.2;
+    } else if (activityLevel === 'lightly active') {
+      return BMR * 1.375;
+    } else if (activityLevel === 'moderately active') {
+      return BMR * 1.55;
+    } else if (activityLevel === 'very active') {
+      return BMR * 1.725;
+    } else if (activityLevel === 'extra active') {
+      return BMR * 1.9;
+    }
+  }
+  button.addEventListener("click",function calculateCaloricIntake() {
+    
+    if (isCalculating) return;
+    isCalculating = true;
+
+    const weight = document.getElementById('weight').value;
+    const height = document.getElementById('height').value;
+    const age = document.getElementById('age').value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const activityLevel = document.getElementById('activity-level').value;
+
+    const BMR = calculateBMR(weight, height, age, gender);
+    const caloricIntake = calculateCaloricIntake(activityLevel, BMR);
+    document.getElementById('result').innerHTML = `Your caloric intake should be ${caloricIntake} calories.`;
 }
+)
 
-function BMRcalc() {
-    var BMRmainHeight;
-    if (BMRheightValue.value == "inch") {
-        BMRmainHeight = BMRgivenHeight.value * 2.54;
-    } else if (BMRheightValue.value == "cm") {
-        BMRmainHeight = BMRgivenHeight.value;
-    } else if (BMRheightValue.value == "meter") {
-        BMRmainHeight = BMRgivenHeight.value * 100;
-    }
-    var BMRres;
-    var BMRgenderValue = document.getElementById("BMRgenderValue");
-    if (BMRgenderValue.value == "female") {
-        var BMRdiboWeight = BMRmainWeight.value * 9.6
-        var BMRdiboHeight = BMRmainHeight * 1.8
-        var BMRdiboAge = BMRmainAge.value * 4.7
-        BMRres = BMRdiboWeight + BMRdiboHeight - BMRdiboAge + 655;
-    } else if (BMRgenderValue.value == "male") {
-        var BMRdiboWeight = BMRmainWeight.value * 13.7
-        var BMRdiboHeight = BMRmainHeight * 5
-        var BMRdiboAge = BMRmainAge.value * 6.8
-        BMRres = BMRdiboWeight + BMRdiboHeight - BMRdiboAge + 66;
-    }
-    BMRresInt = BMRres
-    BMRres = BMRres.toString();
-
-    if (BMRres == "NaN" || BMRres == "0" || BMRres == "66" || BMRres == "655") {
-        document.getElementById("BMRres").innerHTML = "<h5>Please Enter Valid Information.</h5>";
-        window.alert("Please enter valid information.\nWithout giving valid information, The site will not work.\nHope you understand it.");
-    } else {
-        BMRres = BMRresInt.toFixed(3);
-        var all = `<h5>Your BMR is ${BMRres}</h5>`;
-        document.getElementById("BMRres").innerHTML = all;
-    }
-}
-
-// The BMR Section of the website Ends Here!
