@@ -33,7 +33,7 @@ function calculateCaloricIntake(activityLevel, BMR) {
   
     const BMR = calculateBMR(weight, height, age, gender);
     const caloricIntake = calculateCaloricIntake(activityLevel, BMR);
-    document.getElementById('result').innerHTML = `Your caloric intake should be ${caloricIntake} calories.`;
+    document.getElementById('result').innerHTML = `Your caloric intake should be ${Math.round(caloricIntake)} calories.`;
   };
   
 button.addEventListener('click', calculateCaloricIntakeFunction);
