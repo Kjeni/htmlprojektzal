@@ -30,10 +30,20 @@ function calculateCaloricIntake(activityLevel, BMR) {
     const age = document.getElementById('age').value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const activityLevel = document.getElementById('activity-level').value;
-  
+    const protein = document.getElementById('weight').value;
+
+
     const BMR = calculateBMR(weight, height, age, gender);
-    const caloricIntake = calculateCaloricIntake(activityLevel, BMR);
-    document.getElementById('result').innerHTML = `Your caloric intake should be ${Math.round(caloricIntake)} calories.`;
+    const caloricIntake = calculateCaloricIntake(activityLevel, BMR)-500;
+    document.getElementById('result').innerHTML = `Twoje zapotrzebowanie kaloryczne wynosi ${Math.round(caloricIntake)} kalorii.`;
+
+    const proteincalories = 8*weight;
+    const fatcalories = caloricIntake-proteincalories;
+    const fat = 0.3*fatcalories/9;
+    const carb = 0.7*fatcalories/4;
+    document.getElementById('protein').innerHTML = `Powinieneś spożywać ${Math.round(protein)*2}g białka.`;
+    document.getElementById('fat').innerHTML = `Powinieneś spożywać ${Math.round(fat)}g tłuszczy.`;
+    document.getElementById('carb').innerHTML = `Powinieneś spożywać ${Math.round(carb)}g węglowodanów.`;
   };
   
 button.addEventListener('click', calculateCaloricIntakeFunction);
