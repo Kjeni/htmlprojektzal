@@ -76,6 +76,14 @@ div.wybrane {
 body {
     background-color: #000000;
 }
+/* formularz */
+fieldset{
+    width: 60em
+}
+legend{
+    color: white;
+    margin: 0 auto;
+}
 label{
     color: white;
     background-color: #000000;
@@ -101,3 +109,4 @@ select{
 #carb{
     color: white;
 }
+/* koniecformularza */
