@@ -5,7 +5,7 @@ div.logo {
     display: inline-block;
     margin-left: 30PX;
     margin-right: auto;
-    /* border: 1px solid red; */
+    /* border: 1px solid  */
 
   }
   div.menu {
@@ -14,7 +14,7 @@ div.logo {
     color: aliceblue;
   
     margin-left: 12%;
-    /* border: 1px solid red; */
+    /* border: 1px solid  */
   
   }
   table.menu1 {
@@ -51,7 +51,7 @@ div.container {
     display: flex; 
     width: auto;
     position: relative;
-    border-bottom: 2px rgb(255, 255, 255) solid; 
+
     justify-content: space-between;
         
     }
@@ -59,7 +59,7 @@ div.bulk {
     flex-basis: 70%;
     height: 500px;
     width: auto;
-    border: 1px solid red;
+    border: 1px solid; 
     font-family: 'Teko',sans-serif;
     font-size: 20px;
 
@@ -73,7 +73,7 @@ div.bulk {
     }
 
 div.wybrane {
-    border: 1px solid red;
+    border: 1px solid; 
     flex-basis: 50%;
     height: 500px;
     width: auto;
@@ -90,6 +90,7 @@ fieldset{
 legend{
     color: white;
     margin: 0 auto;
+    font-size: 30px;
 }
 label{
     color: white;
@@ -157,3 +158,31 @@ select{
     font-size: 22px;
 }
 /* koniecformularza */
+
+/* stopka */
+table.dol {
+    margin-top: 40px;
+    padding-top: 20px;
+    
+  }
+  
+  th.dol1{
+    color: aliceblue;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    width: 1657px;
+    text-align: left;
+  }
+  
+  th.ikony {
+    width: 100px;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+  
+  }
+  
+  th.ikony:hover {
+    opacity: 1;
+  }
+/* koniecstopki */
