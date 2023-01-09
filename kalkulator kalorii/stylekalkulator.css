@@ -1,5 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400&family=Teko:wght@300;400;500&display=swap');
 
+/* menu */
+div.logo {
+    display: inline-block;
+    margin-left: 30PX;
+    margin-right: auto;
+    /* border: 1px solid red; */
+
+  }
+  div.menu {
+    display: inline-block;
+    position: absolute;
+    color: aliceblue;
+  
+    margin-left: 12%;
+    /* border: 1px solid red; */
+  
+  }
+  table.menu1 {
+    margin-top: 40px;
+  }
+  th.menu2 {
+    width: 500px;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+th:hover {
+    opacity: 1;
+  }
+  button {
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:62px;
+    width: 320px;
+    font-size: 30px;
+    letter-spacing: 12px;
+    font-family: 'Teko', sans-serif;
+    transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+    transform: scale(1.1);
+    }
+  
+/* koniecmenu */
 body {
     background-color: #000000;
 }
@@ -15,12 +62,16 @@ select{
     background-color: #000000;
     color: white;
 }
-button{
-    background-color: #000000;
-    color: white;
-    border-color: white;
-    border-radius: 7px;
-}
+
 #result {
+    color: white;
+}
+#protein{
+    color: white;
+}
+#fat{
+    color: white;
+}
+#carb{
     color: white;
 }
