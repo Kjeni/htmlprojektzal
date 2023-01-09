@@ -21,30 +21,42 @@
       </table>
   </div>
 
-    <form id="form">
-      <label for="weight">Waga (kg):</label><br>
-      <input type="text" id="weight"><br>
-      <label for="height">Wzrost (cm):</label><br>
-      <input type="text" id="height"><br>
-      <label for="age">Wiek:</label><br>
-      <input type="text" id="age"><br>
-      <label for="gender">Płeć:</label><br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Mężczyzna</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Kobieta</label><br>
-      <label for="activity-level">Poziom aktywności:</label><br>
-      <select id="activity-level">
-        <option value="sedentary">Znikoma (brak ćwiczeń, praca siedząca, szkoła)</option>
-        <option value="lightly active">Bardzo mała (ćwiczenia raz na tydzień, praca lekka)</option>
-        <option value="moderately active">Umiarkowana (ćwiczenia dwa razy w tygodniu - intensywność średnia)</option>
-        <option value="very active">Wysoka (dość ciężki trening kilka razy w tygodniu)</option>
-        <option value="extra active">Bardzo wysoka (co najmniej cztery ciężkie treningi w tygodniu)</option>
-      </select>
-      <br><br>
-      <button type="button" id="button">Oblicz</button>
-      <button id="reset">Wyczyść</button>
-    </form> 
+  <div class="container">
+    <div class="bulk">
+      <form id="form">
+        <label for="weight">Waga (kg):</label><br>
+        <input type="text" id="weight"><br>
+        <label for="height">Wzrost (cm):</label><br>
+        <input type="text" id="height"><br>
+        <label for="age">Wiek:</label><br>
+        <input type="text" id="age"><br>
+        <label for="gender">Płeć:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Mężczyzna</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kobieta</label><br>
+        <label for="activity-level">Poziom aktywności:</label><br>
+        <select id="activity-level">
+          <option value="sedentary">Znikoma (brak ćwiczeń, praca siedząca, szkoła)</option>
+          <option value="lightly active">Bardzo mała (ćwiczenia raz na tydzień, praca lekka)</option>
+          <option value="moderately active">Umiarkowana (ćwiczenia dwa razy w tygodniu - intensywność średnia)</option>
+          <option value="very active">Wysoka (dość ciężki trening kilka razy w tygodniu)</option>
+          <option value="extra active">Bardzo wysoka (co najmniej cztery ciężkie treningi w tygodniu)</option>
+        </select>
+        <br><br>
+        <button type="button" id="button">Oblicz</button>
+        <button id="reset">Wyczyść</button>
+      </form> 
+
+
+    </div>
+    <div class="wybrane">
+  <img class="dis" src="src/paniblender.jpg" alt="paniwkuchni">        
+    </div>
+
+</div>
+
+    
     <br>
     <div id="result"></div>
     <div id="protein"></div>

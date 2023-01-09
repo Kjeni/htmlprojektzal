@@ -46,6 +46,32 @@ th:hover {
     transform: scale(1.1);
     }
   
+div.container {
+    padding: 20px;
+    display: flex; 
+    width: auto;
+    position: relative;
+    border-bottom: 2px rgb(255, 255, 255) solid; 
+    justify-content: space-between;
+        
+    }
+div.bulk {
+    flex-basis: 50%;
+    height: 500px;
+    width: auto;
+      
+    }
+.dis {
+    object-fit: contain;
+    height: 500px; 
+    }
+
+div.wybrane {
+    flex-basis: 50%;
+    height: 500px;
+    width: auto;
+    }
+
 /* koniecmenu */
 body {
     background-color: #000000;
