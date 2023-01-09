@@ -28,7 +28,7 @@ div.logo {
 th:hover {
     opacity: 1;
   }
-  button {
+button.menu2 {
     color: #ffffff;
     background-color: #000000;
     border: 1px solid #9b9b9b;
@@ -42,7 +42,7 @@ th:hover {
     font-family: 'Teko', sans-serif;
     transition: all 0.2s ease-in-out;
     }
-    button:hover {
+    button.menu2:hover {
     transform: scale(1.1);
     }
   
@@ -60,6 +60,8 @@ div.bulk {
     height: 500px;
     width: auto;
     border: 1px solid red;
+    font-family: 'Teko',sans-serif;
+    font-size: 20px;
 
       
     }
@@ -92,10 +94,13 @@ legend{
 label{
     color: white;
     background-color: #000000;
+    font-size: 20px;
 }
 input{
     background-color: #000000;
     color: white;
+    margin-bottom: 0.8em;
+    font-size: 1em;
 }
 select{
     background-color: #000000;
@@ -113,5 +118,42 @@ select{
 }
 #carb{
     color: white;
+}
+div.bulk button{
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #9b9b9b;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:40px;
+    width: 180px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-family: 'Teko', sans-serif;
+    transition: all 0.2s ease-in-out;
+    margin-right: 20px;
+    }
+div.bulk button:hover {
+transform: scale(1.1);
+}
+#wyniki{
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 3.5em;
+
+}
+#formularz{
+    display: inline-block;
+    width: 50%;
+
+}
+input[type='radio']{
+    accent-color: rgb(140, 255, 32);
+}
+select{
+    font-size: 22px;
 }
 /* koniecformularza */

@@ -25,7 +25,8 @@
     <div class="bulk">
   <fieldset>
   <legend>Oblicz swoje zapotrzebowanie kaloryczne:</legend>
-    <form id="form">
+  <div id="formularz">  
+  <form id="form" autocomplete="off">
       <label for="weight">Waga (kg):</label><br>
       <input type="text" id="weight"><br>
       <label for="height">Wzrost (cm):</label><br>
@@ -48,13 +49,15 @@
       <br><br>
       <button type="button" id="button">Oblicz</button>
       <button id="reset">Wyczyść</button>
-    </form> 
-    <br>
-    <div id="result"></div>
-    <div id="protein"></div>
-    <div id="fat"></div>
-    <div id="carb"></div>
-  </fieldset>
+    </form>
+  </div>
+  <div id="wyniki">
+  <div id="result"></div>
+  <div id="protein"></div>
+  <div id="fat"></div>
+  <div id="carb"></div>
+  </div>
+</fieldset>
 </div>
 <div class="wybrane">
 <img class="dis" src="src/paniblender.jpg" alt="paniwkuchni">        
