@@ -1,3 +1,4 @@
+// Harrisbenedict
 let isCalculating = false;
 const button = document.querySelector('#button');
 
