@@ -56,17 +56,22 @@ div.container {
         
     }
 div.bulk {
-    flex-basis: 50%;
+    flex-basis: 70%;
     height: 500px;
     width: auto;
+    border: 1px solid red;
+
       
     }
 .dis {
     object-fit: contain;
     height: 500px; 
+    float: right;
+
     }
 
 div.wybrane {
+    border: 1px solid red;
     flex-basis: 50%;
     height: 500px;
     width: auto;
@@ -78,7 +83,7 @@ body {
 }
 /* formularz */
 fieldset{
-    width: 60em
+    width: auto;
 }
 legend{
     color: white;
