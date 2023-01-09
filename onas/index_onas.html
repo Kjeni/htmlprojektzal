@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+    <div class="logo">
+        <img src="src3/Vector.svg" width='400px' height='255px'>    
+    </div>
+    
+    <div class="menu">
+
+        <table class="menu1">
+            <tr>
+                <th class="menu2"><a href="../index.html"><button  class="menu2">GŁÓWNA</button></a></th>
+                <th class="menu2"><a href="../kontakt/index_kontakt.html"><button class="menu2">KONTAKT</button></a></th>
+                <th class="menu2"><a href=""><button class="menu2">KALKULATOR</button></a></th>
+
+            </tr>
+        </table>
+
+    </div>
+    </div>
+    <div class="container">
+
+    <div class="element">
+        <button class="klik" value="Ukryj">Przeczytaj o nas</button>
+        <p>"Bulk & Cut" to nowoczesna aplikacja zajmująca się tworzeniem indywidualnych planów treningowych dla klientów z różnych grup wiekowych i o różnych poziomach zaawansowania. Aplikacja została stworzona przez zespół doświadczonych trenerów personalnych, którzy posiadają wiedzę i umiejętności niezbędne do opracowywania skutecznych i bezpiecznych planów treningowych.</p>
+        <p>Aplikacja oferuje również szkolenia i porady dotyczące zdrowego stylu życia, a także współpracuje z dietetykami, aby pomóc klientom osiągać ich cele treningowe. Wszystkie plany treningowe są dostosowywane do indywidualnych potrzeb i celów każdego klienta, a trenerzy są zawsze dostępni, aby pomóc i odpowiedzieć na pytania oraz wątpliwości.</p>
+        <p>"Bulk & Cut" cieszy się dobrą reputacją wśród swoich użytkowników, a jej celem jest pomaganie ludziom w osiąganiu ich celów treningowych i poprawie ich jakości życia poprzez aktywność fizyczną.</p>
+    </div>
+
+    <div class="element">
+
+        <img src="src3/woman2.jpg" alt="" height="560px" width="1000px">
+        
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <table class="dol">
+            <th class="dol1">Razem z nami staniesz się lepszą wersją siebie.</th><th class="ikony"><a href="https://www.facebook.com/" target="_blank"><img src="src3/fb.svg" alt="facebook" height="40px"></a></th><th class="ikony"><a href="https://www.instagram.com/" target="_blank"><img src="src3/instagram-svgrepo-com 1.svg" alt="instagram" height="46px"></a></th>
+        </table>
+    </div>
+
+
+
+    <script language="javascript">
+        $(document).ready(function () {
+            $("p").hide();
+            $(".klik").on("click", function () {
+                $("p").toggle("slow");
+                if ($(this).text() == "Przeczytaj o nas")
+                    $(this).text("Ukryj");
+                else
+                    $(this).text("Przeczytaj o nas");
+            });
+        });
+    </script>
+
+
+
+<script src="src3/tilt.js"></script>
+<!-- <script type="text/javascript" src="1.js"></script>    -->
+</body>
+</html>

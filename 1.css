@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400&family=Teko:wght@300;400;500&display=swap');
+body {
+  background-color: #000000;
+}
+div.logo {
+  display: inline-block;
+  margin-left: 30PX;
+  margin-right: auto;
+  /* border: 1px solid red; */
+
+
+  
+}
+div.menu {
+  display: inline-block;
+  position: absolute;
+  color: aliceblue;
+
+  margin-left: 12%;
+  /* border: 1px solid red; */
+
+}
+table.menu1 {
+  margin-top: 40px;
+}
+th.menu2 {
+  width: 500px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+
+}
+th:hover {
+  opacity: 1;
+}
+button {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #9b9b9b;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height:62px;
+  width: 320px;
+  font-size: 30px;
+  letter-spacing: 12px;
+  font-family: 'Teko', sans-serif;
+  transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+  transform: scale(1.1);
+  }
+
+div.container {
+  padding: 20px;
+  display: flex; 
+  width: auto;
+  position: relative;
+  border-bottom: 2px rgb(255, 255, 255) solid; 
+  justify-content: space-between;
+  
+}
+
+div.bulk {
+  flex-basis: 50%;
+  height: 500px;
+  width: auto;
+
+}
+div.cut {
+  flex-basis: 50%;
+  height: 500px;
+  width: auto;
+}
+
+
+.dis {
+  object-fit: contain;
+  height: 500px; 
+}
+
+.bulk:hover img{
+  filter: blur(5px) brightness(80%);
+}
+
+.bulk :not(img){
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 5px;
+  top: 40%;
+  left: 20%;
+  font-size: 40px;
+  opacity: 0;
+  transition: .5s;
+}
+.bulk:hover :not(img){
+opacity: 1;
+}
+
+.cut:hover img{
+  filter: blur(5px) brightness(80%);
+}
+
+.cut :not(img){
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 40%;
+  left: 75%;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 5px;
+  opacity: 0;
+  transition: .5s;
+}
+.cut:hover :not(img){
+opacity: 1;
+}
+
+table.dol {
+  margin-top: 40px;
+  
+}
+
+th.dol1{
+  color: aliceblue;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  width: 1657px;
+  text-align: left;
+}
+
+th.ikony {
+  width: 100px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+
+}
+
+th.ikony:hover {
+  opacity: 1;
+}
+
+
+
+
+

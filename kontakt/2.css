@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400&family=Teko:wght@300;400;500&display=swap');
+body {
+  background-color: #000000;
+}
+div.logo {
+  display: inline-block;
+  margin-left: 30PX;
+  margin-right: auto;
+  /* border: 1px solid red; */
+
+
+  
+}
+div.menu {
+  display: inline-block;
+  position: absolute;
+  color: aliceblue;
+
+  margin-left: 12%;
+  /* border: 1px solid red; */
+
+}
+table.menu1 {
+  margin-top: 40px;
+}
+th.menu2 {
+  width: 500px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+
+}
+th:hover {
+  opacity: 1;
+}
+button {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #9b9b9b;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height:62px;
+  width: 320px;
+  font-size: 30px;
+  letter-spacing: 12px;
+  font-family: 'Teko', sans-serif;
+  transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+  transform: scale(1.1);
+  }
+
+  div.container {
+    padding: 20px;
+    display: flex; 
+    width: auto;
+    position: relative;
+    border-bottom: 2px rgb(255, 255, 255) solid; 
+    justify-content: space-between;
+    
+  }
+
+
+
+  div.element {
+    display: inline-block;
+    height: 560px;
+    width: 560px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  div.info {
+    margin-top: 10%;
+    color:rgb(202, 202, 202);
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Teko', sans-serif;
+  }
+
+  div.mail {
+    margin-top: 10%;
+    color:rgb(202, 202, 202);
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Teko', sans-serif;
+  }
+  label {
+    font-size: 10px;
+    color: aliceblue;
+    font-family:  sans-serif;
+    letter-spacing: 5px;
+    margin-top: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+input {
+    margin-bottom: 8px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 3px solid rgb(80, 80, 80);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input:focus {
+    border: 3px solid rgb(255, 255, 255);
+}
+textarea {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 3px solid rgb(80, 80, 80);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+textarea:focus {
+    border: 3px solid rgb(255, 255, 255);
+}
+button.form {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid rgb(199, 199, 199);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button.form:hover {
+    transform: scale(0.8);
+}
+
+div.mapa {
+  opacity: 0.5;
+}
+
+    
+
+
+
+
+div.footer {
+    margin-top: 2px;
+}
+
+th.dol1{
+  color: aliceblue;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  width: 1657px;
+  text-align: left;
+}
+
+th.ikony {
+  width: 100px;
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+
+}
+
+th.ikony:hover {
+  opacity: 1;
+}
+
+
+
+
+

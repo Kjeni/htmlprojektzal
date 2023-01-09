@@ -1,0 +1,98 @@
+body {
+    background-color: #000000;
+  }
+  div.logo {
+    display: block;
+    margin-left: 30PX;
+    margin-right: auto;
+    
+  }
+  
+  div.container {
+    padding: 20px;
+    display: flex; 
+    width: auto;
+    position: relative;
+    border-bottom: 2px rgb(255, 255, 255) solid; 
+    justify-content: space-between;
+    
+  }
+  
+  div.bulk {
+    flex-basis: 50%;
+    height: 500px;
+    width: auto;
+    border: 1px solid white;
+  
+  }
+  div.cut {
+    flex-basis: 50%;
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    background-image: url("src/cut3.png");
+    background-repeat: no-repeat;
+  
+  }
+  
+  
+  .dis {
+    opacity: 1;  
+    transition: opacity 0.5s;
+    object-fit: contain;
+    height: 500px; 
+    
+  }
+  
+  .dis:hover {
+    opacity: 0;
+  }
+  
+  .bulk :not(img){
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 40%;
+    left: 22%;
+    border: 1px solid red;
+    font-size: 40px;
+  }
+  
+  test
+
+
+
+
+
+
+  
+.dis {
+  object-fit: contain;
+  height: 500px; 
+  transition: .3s;
+  
+}
+
+.dis:hover {
+  filter: blur(5px) brightness(80%);
+}
+
+.bulk :not(img){
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 40%;
+  left: 22%;
+  font-size: 40px;
+  opacity: 0;
+  transition: .3s;
+}
+.bulk:hover :not(img){
+opacity: 1;
+}
+
+  
+  
+  
+  
+  

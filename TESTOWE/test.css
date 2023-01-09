@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@300;400&family=Source+Sans+Pro:wght@300;400&family=Teko:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap');
+
+div.logo {
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+}
+div.tresc {
+    height: 100%;
+    background-color: blueviolet;
+}
+body {
+    background-color: black;
+}
+
+div.efekt {
+    color: rgb(247, 247, 247);
+    border: 3px solid rgb(104, 104, 104);
+    width: 20%;
+    height: 350px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    margin-top: 5%;
+    margin-right: 2%;
+}
+div.efekt:hover {
+    border: 3px solid rgb(184, 184, 184)
+}
+
+img.cw {
+    max-width:100%;
+    max-height:100%;
+    border-bottom: solid 3px white;
+    opacity: 0.4;
+    object-fit: cover;
+
+}
+div.zdjecie {
+    width: 100%;
+    height: auto;
+}
+div.foty {
+    border: 1px solid red;
+}
+div.efekty {
+    text-align: center;
+}
+div.tekst {
+    text-align: left;
+}
+p.nazwa {
+    color: rgb(140, 255, 32);
+    font-size: 25px;
+    margin-bottom: px;
+    margin-left: 10px;
+    font-family: 'Teko', sans-serif;
+    line-height: 1px;
+}
+p.series {
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 10px;
+    line-height: 2px;
+    margin-left: 10px;
+}
+
+
+
+
