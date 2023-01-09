@@ -157,6 +157,9 @@ input[type='radio']{
 select{
     font-size: 22px;
 }
+span{
+    padding-right: 40px;
+}
 /* koniecformularza */
 
 /* stopka */

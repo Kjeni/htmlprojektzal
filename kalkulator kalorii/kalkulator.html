@@ -34,10 +34,10 @@
       <label for="age">Wiek:</label><br>
       <input type="text" id="age"><br>
       <label for="gender">Płeć:</label><br>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Mężczyzna</label><br>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Kobieta</label><br>
+      <span><input type="radio" id="male" name="gender" value="male">
+      <label for="male">Mężczyzna</label></span>
+      <span><input type="radio" id="female" name="gender" value="female">
+      <label for="female">Kobieta</label></span><br>
       <label for="activity-level">Poziom aktywności:</label><br>
       <select id="activity-level">
         <option value="sedentary">Znikoma (brak ćwiczeń, praca siedząca, szkoła)</option>
@@ -46,7 +46,14 @@
         <option value="very active">Wysoka (dość ciężki trening kilka razy w tygodniu)</option>
         <option value="extra active">Bardzo wysoka (co najmniej cztery ciężkie treningi w tygodniu)</option>
       </select>
-      <br><br>
+      <label for="bulkcut"></label>
+      <span><input type="radio" id="bulk" name="bulkcut" value="bulk">
+      <label for="bulk">Chcę przytyć</label></span>
+      <span><input type="radio" id="stay" name="bulkcut" value="stay">
+      <label for="stay">Chcę utrzymać masę ciała</label></span>
+      <span><input type="radio" id="cut" name="bulkcut" value="cut">
+      <label for="cut">Chcę schudnąć</label><br></span>
+
       <button type="button" id="button">Oblicz</button>
       <button id="reset">Wyczyść</button>
     </form>

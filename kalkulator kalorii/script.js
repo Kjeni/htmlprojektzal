@@ -8,6 +8,8 @@ function calculateBMR(weight, height, age, gender) {
 } else if (gender === 'female') {
     return 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
 }}
+
+
 function calculateCaloricIntake(activityLevel, BMR) {
     if (activityLevel === 'sedentary') {
       return BMR * 1.2;
@@ -21,7 +23,7 @@ function calculateCaloricIntake(activityLevel, BMR) {
       return BMR * 1.9;
     }
   }
-  
+
   const calculateCaloricIntakeFunction = function() {
     if (isCalculating) return;
     isCalculating = true;
@@ -32,11 +34,26 @@ function calculateCaloricIntake(activityLevel, BMR) {
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const activityLevel = document.getElementById('activity-level').value;
     const protein = document.getElementById('weight').value;
-
+    const bulkcut = document.querySelector('input[name="bulkcut"]:checked').value;
+    
 
     const BMR = calculateBMR(weight, height, age, gender);
-    const caloricIntake = calculateCaloricIntake(activityLevel, BMR)-500;
-    document.getElementById('result').innerHTML = `Twoje zapotrzebowanie kaloryczne wynosi ${Math.round(caloricIntake)} kalorii.`;
+    
+    let caloricIntake = calculateCaloricIntake(activityLevel, BMR);
+   
+
+    function addValue(bulkcut,caloricIntake) {
+      if (bulkcut === 'bulk') {
+        return caloricIntake+400;
+      }else if (bulkcut === 'cut'){
+        return caloricIntake-400;
+      }else if (bulkcut === 'stay'){
+        return caloricIntake;
+      }
+    }
+caloricIntake =addValue(bulkcut,caloricIntake);
+
+    document.getElementById('result').innerHTML = `Powinieneś spożywać: ${Math.round(caloricIntake)} kalorii.`;
 
     const proteincalories = 8*weight;
     const fatcalories = caloricIntake-proteincalories;
