@@ -1,5 +1,4 @@
 // Harrisbenedict
-let isCalculating = false;
 // const button = document.querySelector('#button');
 
 function calculateBMR(weight, height, age, gender) {
@@ -23,18 +22,13 @@ function calculateCaloricIntake(activityLevel, BMR) {
       return BMR * 1.9;
     }
   }
-
-  // const calculateCaloricIntakeFunction = function() {
-  //   if (isCalculating) return;
-  //   isCalculating = true;
-// }
-
   
-
+// simplevalidation function buttonclick with summary in the indexfile
 document.getElementById('button').addEventListener('click', function() {
   const form = document.getElementById('form');
   if (form.checkValidity()) {
     console.log('Formularz jest poprawnie wypełniony, wywołuję funkcję calculateCaloriIntakeFunction');
+    
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
     const age = document.getElementById('age').value;
@@ -48,7 +42,7 @@ document.getElementById('button').addEventListener('click', function() {
     
     let caloricIntake = calculateCaloricIntake(activityLevel, BMR);
    
-
+// calorieschanges depending on option chosen
     function addValue(bulkcut,caloricIntake) {
       if (bulkcut === 'bulk') {
         return caloricIntake+400;
@@ -59,7 +53,7 @@ document.getElementById('button').addEventListener('click', function() {
       }
     }
 caloricIntake =addValue(bulkcut,caloricIntake);
-
+// show final results
     document.getElementById('result').innerHTML = `Powinieneś spożywać: ${Math.round(caloricIntake)} kalorii.`;
 
     const proteincalories = 8*weight;
@@ -72,8 +66,8 @@ caloricIntake =addValue(bulkcut,caloricIntake);
     
   } else {
     document.getElementById('result').innerHTML = `Sprwadź wprowadzone dane.`.fontcolor("red");
+    alert("Sprawdź wprowadzone dane")
     console.log('Formularz jest błędnie wypełniony');
-
   }
     event.preventDefault();
 });
