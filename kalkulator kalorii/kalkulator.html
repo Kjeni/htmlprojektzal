@@ -25,18 +25,18 @@
     <div class="bulk">
   <fieldset>
   <legend>Oblicz swoje zapotrzebowanie kaloryczne:</legend>
-  <div id="formularz">  
-  <form id="form" autocomplete="off">
+  <div id="formularz">
+    <form id="form" action="" autocomplete="off">
       <label for="weight">Waga (kg):</label><br>
-      <input type="text" id="weight"><br>
+      <input type="text" id="weight" maxlength="3" required><br>
       <label for="height">Wzrost (cm):</label><br>
-      <input type="text" id="height"><br>
+      <input type="text" id="height" maxlength="3" required><br>
       <label for="age">Wiek:</label><br>
-      <input type="text" id="age"><br>
+      <input type="text" id="age" maxlength="3" required><br>
       <label for="gender">Płeć:</label><br>
-      <span><input type="radio" id="male" name="gender" value="male">
+      <span><input type="radio" id="male" name="gender" value="male" required>
       <label for="male">Mężczyzna</label></span>
-      <span><input type="radio" id="female" name="gender" value="female">
+      <span><input type="radio" id="female" name="gender" value="female" required>
       <label for="female">Kobieta</label></span><br>
       <label for="activity-level">Poziom aktywności:</label><br>
       <select id="activity-level">
