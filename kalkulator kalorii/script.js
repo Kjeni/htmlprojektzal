@@ -65,7 +65,7 @@ caloricIntake =addValue(bulkcut,caloricIntake);
     document.getElementById('carb').innerHTML = `Powinieneś spożywać ${Math.round(carb)}g węglowodanów.`;
     
   } else {
-    document.getElementById('result').innerHTML = `Sprwadź wprowadzone dane.`.fontcolor("red");
+    document.getElementById('result').innerHTML = `Sprwadź wprowadzone dane.`.fontcolor("white");
     alert("Sprawdź wprowadzone dane")
     console.log('Formularz jest błędnie wypełniony');
   }
