@@ -26,13 +26,13 @@
   <fieldset>
   <legend>Oblicz swoje zapotrzebowanie kaloryczne:</legend>
   <div id="formularz">
-    <form id="form" action="" autocomplete="off">
+    <form id="form" autocomplete="off">
       <label for="weight">Waga (kg):</label><br>
-      <input type="text" id="weight" maxlength="3" required><br>
+      <input type="text" id="weight" maxlength="3"><br>
       <label for="height">Wzrost (cm):</label><br>
-      <input type="text" id="height" maxlength="3" required><br>
+      <input type="text" id="height" maxlength="3"><br>
       <label for="age">Wiek:</label><br>
-      <input type="text" id="age" maxlength="3" required><br>
+      <input type="text" id="age" maxlength="3"><br>
       <label for="gender">Płeć:</label><br>
       <span><input type="radio" id="male" name="gender" value="male" required>
       <label for="male">Mężczyzna</label></span>
@@ -47,14 +47,14 @@
         <option value="extra active">Bardzo wysoka (co najmniej cztery ciężkie treningi w tygodniu)</option>
       </select>
       <label for="bulkcut"></label>
-      <span><input type="radio" id="bulk" name="bulkcut" value="bulk">
+      <span><input type="radio" id="bulk" name="bulkcut" value="bulk" required>
       <label for="bulk">Chcę przytyć</label></span>
-      <span><input type="radio" id="stay" name="bulkcut" value="stay">
+      <span><input type="radio" id="stay" name="bulkcut" value="stay" required>
       <label for="stay">Chcę utrzymać masę ciała</label></span>
-      <span><input type="radio" id="cut" name="bulkcut" value="cut">
+      <span><input type="radio" id="cut" name="bulkcut" value="cut" required>
       <label for="cut">Chcę schudnąć</label><br></span>
 
-      <button type="button" id="button">Oblicz</button>
+      <button type="button" id="button" formnovalidate="true">Oblicz</button>
       <button id="reset">Wyczyść</button>
     </form>
   </div>
