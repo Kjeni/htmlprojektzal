@@ -67,8 +67,8 @@ caloricIntake =addValue(bulkcut,caloricIntake);
   } else {
     //if there were error checkValidity returns false:
     document.getElementById('result').innerHTML = `Sprwadź wprowadzone dane.`.fontcolor("white");
-    document.getElementById('protein').innerHTML = ``
-    document.getElementById('fat').innerHTML = ``
+    document.getElementById('protein').innerHTML = `Sugestia:`
+    document.getElementById('fat').innerHTML = `Wypełnij wszystkie pola.`
     document.getElementById('carb').innerHTML = ``
     console.log('Formularz jest błędnie wypełniony');
     alert("Sprawdź wprowadzone dane")
