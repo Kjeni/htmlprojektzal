@@ -189,3 +189,17 @@ table.dol {
     opacity: 1;
   }
 /* koniecstopki */
+#opis-container{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Teko', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    letter-spacing: 3px;
+}
+h3{
+    margin-top: 100px;
+}
+
