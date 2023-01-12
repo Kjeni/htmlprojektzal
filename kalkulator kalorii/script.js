@@ -8,7 +8,7 @@ function calculateBMR(weight, height, age, gender) {
     return 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
 }}
 
-// Harrisbenedict(PAL)
+// HarrisBenedict(PAL)
 function calculateCaloricIntake(activityLevel, BMR) {
     if (activityLevel === 'sedentary') {
       return BMR * 1.2;
