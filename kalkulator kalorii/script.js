@@ -23,11 +23,11 @@ function calculateCaloricIntake(activityLevel, BMR) {
     }
   }
   
-// function buttonclick with summary in the indexfile with simple validation
+// function buttonclick with summary in the indexfile with simple validation (information in the indexfile with console.log message)
 document.getElementById('button').addEventListener('click', function() {
   const form = document.getElementById('form');
   if (form.checkValidity()) {
-    console.log('Formularz jest poprawnie wypełniony, wywołuję funkcję calculateCaloriIntakeFunction');
+    console.log('Formularz jest poprawnie wypełniony, wywołuję funkcję function');
     
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
@@ -65,9 +65,13 @@ caloricIntake =addValue(bulkcut,caloricIntake);
     document.getElementById('carb').innerHTML = `Powinieneś spożywać ${Math.round(carb)}g węglowodanów.`;
     
   } else {
+    //if there were error checkValidity returns false:
     document.getElementById('result').innerHTML = `Sprwadź wprowadzone dane.`.fontcolor("white");
-    alert("Sprawdź wprowadzone dane")
+    document.getElementById('protein').innerHTML = ``
+    document.getElementById('fat').innerHTML = ``
+    document.getElementById('carb').innerHTML = ``
     console.log('Formularz jest błędnie wypełniony');
+    alert("Sprawdź wprowadzone dane")
   }
     event.preventDefault();
 });
