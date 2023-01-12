@@ -1,6 +1,6 @@
-// Harrisbenedict
-// const button = document.querySelector('#button');
+// CPM CALCULATOR
 
+// PPM
 function calculateBMR(weight, height, age, gender) {
   if (gender === 'male') {
     return 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
@@ -8,7 +8,7 @@ function calculateBMR(weight, height, age, gender) {
     return 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
 }}
 
-
+// Harrisbenedict(PAL)
 function calculateCaloricIntake(activityLevel, BMR) {
     if (activityLevel === 'sedentary') {
       return BMR * 1.2;
@@ -23,7 +23,7 @@ function calculateCaloricIntake(activityLevel, BMR) {
     }
   }
   
-// simplevalidation function buttonclick with summary in the indexfile
+// function buttonclick with summary in the indexfile with simple validation
 document.getElementById('button').addEventListener('click', function() {
   const form = document.getElementById('form');
   if (form.checkValidity()) {
