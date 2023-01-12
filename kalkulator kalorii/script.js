@@ -27,7 +27,7 @@ function calculateCaloricIntake(activityLevel, BMR) {
 document.getElementById('button').addEventListener('click', function() {
   const form = document.getElementById('form');
   if (form.checkValidity()) {
-    console.log('Formularz jest poprawnie wypełniony, wywołuję funkcję function');
+    console.log('Formularz jest poprawnie wypełniony, wykonuję obliczenia:');
     
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
