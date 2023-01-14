@@ -54,15 +54,17 @@ document.getElementById('button').addEventListener('click', function() {
     }
 caloricIntake =addValue(bulkcut,caloricIntake);
 // show final results
-    document.getElementById('result').innerHTML = `Powinieneś spożywać: ${Math.round(caloricIntake)} kalorii.`;
+    document.getElementById('result').innerHTML = `Powinieneś spożywać: ${Math.round(caloricIntake)} kalorii,`;
 
     const proteincalories = 8*weight;
     const fatcalories = caloricIntake-proteincalories;
     const fat = 0.3*fatcalories/9;
     const carb = 0.7*fatcalories/4;
-    document.getElementById('protein').innerHTML = `Powinieneś spożywać ${Math.round(protein)*2}g białka.`;
-    document.getElementById('fat').innerHTML = `Powinieneś spożywać ${Math.round(fat)}g tłuszczy.`;
-    document.getElementById('carb').innerHTML = `Powinieneś spożywać ${Math.round(carb)}g węglowodanów.`;
+    const fiber = caloricIntake*14/1000
+    document.getElementById('protein').innerHTML = `${Math.round(protein)*2}g białka,`;
+    document.getElementById('fat').innerHTML = `${Math.round(fat)}g tłuszczy,`;
+    document.getElementById('carb').innerHTML = `${Math.round(carb)}g węglowodanów,`;
+    document.getElementById('fiber').innerHTML = `${Math.round(fiber)}g błonnika.`;
     
   } else {
     //if there were error checkValidity returns false:
@@ -70,6 +72,7 @@ caloricIntake =addValue(bulkcut,caloricIntake);
     document.getElementById('protein').innerHTML = `Sugestia:`
     document.getElementById('fat').innerHTML = `Wypełnij wszystkie pola.`
     document.getElementById('carb').innerHTML = ``
+    document.getElementById('fiber').innerHTML = ``;
     console.log('Formularz jest błędnie wypełniony');
     alert("Sprawdź wprowadzone dane")
   }

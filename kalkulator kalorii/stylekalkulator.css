@@ -120,6 +120,9 @@ select{
 #carb{
     color: white;
 }
+#fiber{
+    color: white;
+}
 div.bulk button{
     color: #ffffff;
     background-color: #000000;
@@ -143,7 +146,7 @@ transform: scale(1.1);
     font-size: 30px;
     text-align: center;
     vertical-align: top;
-    padding-top: 3.5em;
+    padding-top: 2.5em;
 
 }
 #formularz{
@@ -201,5 +204,8 @@ table.dol {
 }
 h3{
     margin-top: 100px;
+}
+li{
+    text-align: left;
 }
 
