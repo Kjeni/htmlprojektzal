@@ -166,11 +166,11 @@ span{
 /* koniecformularza */
 
 /* stopka */
-table.dol {
-    margin-top: 40px;
-    padding-top: 20px;
-    
-  }
+.footer {
+    border-top: 2px rgb(255, 255, 255) solid;
+
+}
+
   
   th.dol1{
     color: aliceblue;
@@ -205,6 +205,8 @@ table.dol {
 h3{
     margin-top: 100px;
 }
+
+
 li{
     text-align: left;
 }
